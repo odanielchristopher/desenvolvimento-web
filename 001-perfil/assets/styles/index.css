@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(247, 247, 247);
+}
+
+header {
+  background: rgb(233, 52, 52);
+  padding: 2rem;
+  font-family: sans-serif;
+  color: white;
+}
+
+header p {
+  color: rgb(15, 15, 15);
+}
+
+main {
+  padding: 2rem;
+}
+
+.about {
+  font-family: sans-serif;
+  margin-bottom: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  padding-block: 2rem;
+}
+
+.profile cite {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.infos {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+  font-family: sans-serif;
+}
