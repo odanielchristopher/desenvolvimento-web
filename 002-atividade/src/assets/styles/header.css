@@ -1,0 +1,46 @@
+header {
+  background: #C92A2A;
+  display: flex;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header span {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+header a {
+  border: 1px solid #FFF;
+  color: #FFF;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all ease-in-out 200ms;
+  font-family: "Roboto", sans-serif;
+}
+
+header a:hover {
+  background-color: #FFF;
+  color: #C92A2A;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #FFF;
+  border: none;
+  padding: 0;
+}
+
+header nav li a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: #FFF;
+}
