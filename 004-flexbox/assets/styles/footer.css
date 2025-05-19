@@ -1,0 +1,10 @@
+.footer {
+  background: #DDD;
+  display: grid;
+  place-content: center;
+  padding: 32px;
+}
+
+.footer span {
+  font-weight: 700;
+}

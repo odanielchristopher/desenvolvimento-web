@@ -1,0 +1,19 @@
+.navigation {
+  background: #222;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation_link {
+  transition: all ease-in 200ms;
+  color: #FFF;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+}
+
+.navigation_link:hover {
+  background: #FFF;
+  color: #222;
+}
