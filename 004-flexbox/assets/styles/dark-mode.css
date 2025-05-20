@@ -1,0 +1,16 @@
+body.dark {
+  background: #222;
+  color: #fff;
+}
+
+body.dark .header {
+  background: #133;
+}
+
+body.dark .main_aside {
+  background: #333;
+}
+
+body.dark .footer {
+  background: #133;
+}

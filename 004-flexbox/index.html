@@ -10,69 +10,230 @@
     <link rel="stylesheet" href="./assets/styles/navigation.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/articles.css" />
+    <link rel="stylesheet" href="./assets/styles/switch.css" />
+    <link rel="stylesheet" href="./assets/styles/dark-mode.css" />
+    <link rel="stylesheet" href="./assets/styles/responsive.css" />
+
+    <script src="./assets/js/switch.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="header_title">My Website</h1>
-
-      <p class="header_description">With a <strong>flexible</strong> layout</p>
+      <h1 class="header_title">Daniel Rodrigues - Desenvolvedor Web</h1>
+      <p class="header_description">
+        Criando <strong>experiências responsivas</strong> com HTML, CSS e
+        JavaScript.
+      </p>
     </header>
+
     <nav class="navigation">
-      <a href="#" class="navigation_link">Link 1</a>
-      <a href="#" class="navigation_link">Link 2</a>
-      <a href="#" class="navigation_link">Link 3</a>
-      <a href="#" class="navigation_link">Link 4</a>
+      <div class="links">
+        <a href="#about" class="navigation_link">Sobre</a>
+        <a href="#projects" class="navigation_link">Projetos</a>
+        <a href="#contact" class="navigation_link">Contato</a>
+        <a href="#content" class="navigation_link">Blog</a>
+      </div>
+
+      <label for="theme" class="theme">
+        <span class="theme__toggle-wrap">
+          <input
+            id="theme"
+            class="theme__toggle"
+            type="checkbox"
+            role="switch"
+            name="theme"
+            value="dark"
+            data-switch
+          />
+          <span class="theme__fill"></span>
+          <span class="theme__icon">
+            <span class="theme__icon-part"></span>
+            <span class="theme__icon-part"></span>
+            <span class="theme__icon-part"></span>
+            <span class="theme__icon-part"></span>
+            <span class="theme__icon-part"></span>
+            <span class="theme__icon-part"></span>
+            <span class="theme__icon-part"></span>
+            <span class="theme__icon-part"></span>
+            <span class="theme__icon-part"></span>
+          </span>
+        </span>
+      </label>
     </nav>
 
     <main class="main">
       <aside class="main_aside">
         <section id="about" class="aside_section">
-          <h4>About me</h4>
-
+          <h4>Sobre mim</h4>
           <div class="aside_section__image-container">
-            <span>Phone of me:</span>
-
-            <img src="" alt="image" class="aside_section__image" />
+            <span>Foto:</span>
+            <img
+              src="https://github.com/odanielchristopher.png"
+              alt="Um homem muito bonto XD"
+              class="aside_section__image"
+            />
           </div>
-
-          <p>Some text about me in culpa qui officia desenrunt molit anim.</p>
+          <p>
+            Sou um desenvolvedor front-end apaixonado por criar interfaces
+            limpas e funcionais. Tenho experiência com React, Tailwind e boas
+            práticas de CSS como Flexbox e Grid.
+          </p>
         </section>
 
         <section id="more-text" class="aside_section more-text">
-          <h4>More text</h4>
-
-          <p>Some text about me in culpa qui officia desenrunt molit anim.</p>
-
+          <h4>Hobbies</h4>
+          <p>
+            Quando não estou codando, gosto de fotografia, tocar violão e
+            explorar novas tecnologias.
+          </p>
           <div class="aside_section__image-list">
-            <img src="" alt="image" class="item" />
-            <img src="" alt="image" class="item" />
-            <img src="" alt="image" class="item" />
+            <img
+              src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bXVzaWN8ZW58MHx8MHx8fDA%3D"
+              alt="Foto 1"
+              class="item"
+              style="object-fit: cover"
+              height="60px"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D"
+              alt="Foto 2"
+              class="item"
+              style="object-fit: cover"
+              height="60px"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1615525137689-198778541af6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Foto 3"
+              class="item"
+              style="object-fit: cover"
+              height="60px"
+            />
           </div>
         </section>
       </aside>
 
       <section id="content" class="main_content">
         <header class="main_content__header">
-          <h3 class="main_content__title">Title heading</h3>
-
+          <h3 class="main_content__title">
+            6 Artigos para Desenvolvedores Web
+          </h3>
           <span class="main_content__description">
-            Title description, Dec 7, 2024
+            Atualizado em 20 de Maio de 2025
           </span>
         </header>
 
-        <img src="" alt="image" class="main_content__image" />
+        <article class="main_content__article">
+          <div>
+            <h4>Como criei meu primeiro projeto com React</h4>
+            <p>
+              Aprender React foi um divisor de águas na minha carreira. Comecei
+              com um projeto simples de lista de tarefas e rapidamente percebi o
+              poder da componentização. Utilizar estados, props e hooks como
+              <code>useState</code> e <code>useEffect</code> me permitiu criar
+              uma aplicação reativa e moderna.
+            </p>
+          </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfUE6Pg-uTDS6Cdq6gMmXRNhDt1jQfWp-tLA&s"
+            alt="Imagem ilustrativa do React"
+            id="react"
+          />
+        </article>
 
-        <p class="main_content__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veniam
-          debitis sequi libero? Excepturi, assumenda ut. Eum architecto vero
-          molestias iure magni, dolore assumenda molestiae in nam illum
-          dignissimos corporis.
-        </p>
+        <article class="main_content__article inherit">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDo8oBNZimtW1L_rW0EwZiBp6MYE-pJtFLA&s"
+            alt="Imagem ilustrativa do FlexBox"
+            id="flexbox"
+          />
+          <div>
+            <h4>Design Responsivo na Prática</h4>
+            <p>
+              Aprendi que design responsivo não é só sobre media queries. Usar
+              unidades relativas como <code>em</code>, <code>rem</code> e
+              <code>%</code>, além de trabalhar com layouts fluidos usando
+              Flexbox e Grid, é essencial para garantir boa experiência em
+              qualquer dispositivo.
+            </p>
+          </div>
+        </article>
+
+        <article class="main_content__article inherit techs">
+          <img
+            src="https://codante.io/img/rinha/steps/techs-dark.png"
+            alt="Imagem ilustrativas das tecnologias"
+            id="techs"
+          />
+          <div>
+            <h4>Minhas ferramentas favoritas para produtividade</h4>
+            <p>
+              Algumas ferramentas que aumentam muito minha produtividade no dia
+              a dia são: VSCode com extensões úteis como Prettier e ESLint, Git
+              para versionamento de código, e Figma para prototipação rápida.
+              Além disso, uso o Notion para organização de tarefas e estudo
+              contínuo.
+            </p>
+          </div>
+        </article>
+
+        <article class="main_content__article">
+          <div>
+            <h4>Dominando o Git no Dia a Dia</h4>
+            <p>
+              Git é uma das ferramentas mais importantes para qualquer
+              desenvolvedor. Entender conceitos como <code>commit</code>,
+              <code>branch</code> e <code>merge</code> me ajudou a evitar erros
+              e colaborar melhor em equipe. Aprender comandos como
+              <code>git rebase</code> e <code>git stash</code>
+              elevou meu nível no controle de versões.
+            </p>
+          </div>
+          <img
+            src="https://www.benner.com.br/tecnologia/wp-content/uploads/2023/10/Git.png"
+            alt="Ilustração sobre Git"
+            id="git"
+          />
+        </article>
+
+        <article class="main_content__article row">
+          <img
+            src="https://blog.back4app.com/wp-content/uploads/2023/04/rest-cover.webp"
+            alt="Imagem sobre API REST"
+            id="rest-api"
+          />
+          <div>
+            <h4>O que é uma API REST e como usar?</h4>
+            <p>
+              APIs REST são fundamentais no desenvolvimento web moderno. Elas
+              permitem que diferentes aplicações se comuniquem através de
+              requisições HTTP. Métodos como <code>GET</code>,
+              <code>POST</code> e <code>DELETE</code> são comuns em integrações
+              entre frontend e backend.
+            </p>
+          </div>
+        </article>
+
+        <article class="main_content__article row techs">
+          <div>
+            <h4>Vantagens de usar SVG em seus projetos</h4>
+            <p>
+              O formato SVG é ideal para gráficos vetoriais em sites modernos.
+              Ele é leve, escalável e pode ser animado com CSS e JavaScript.
+              Além disso, é uma ótima opção para ícones responsivos sem perda de
+              qualidade.
+            </p>
+          </div>
+          <img
+            src="https://modomodoagency.com/blog/wp-content/uploads/2018/09/twitter-svg-png-1.png"
+            alt="Imagem sobre SVG"
+            id="svg-image"
+          />
+        </article>
       </section>
     </main>
 
     <footer id="footer" class="footer">
-      <span>Footer</span>
+      <span>&copy; 2024 Daniel Rodrigues - Todos os direitos reservados</span>
     </footer>
   </body>
 </html>

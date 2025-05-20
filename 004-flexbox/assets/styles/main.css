@@ -27,6 +27,8 @@
   background: #666;
   min-width: 100%;
   min-height: 100px;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .aside_section__image-list {
@@ -63,10 +65,4 @@
 
 .main_content__image {
   margin-bottom: 12px;
-}
-
-@media screen and (max-width: 768px) {
-  .main {
-    flex-direction: column;
-  }
 }
