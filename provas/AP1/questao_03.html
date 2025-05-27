@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão #003</title>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #222;
+      }
+
+      .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .card {
+        width: 400px;
+        height: 500px;
+        background: #bbb;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="card">
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-wor
+ld/1.svg"
+          alt="Belo pokemon"
+          id="card-image"
+        />
+      </div>
+
+      <div class="navigation">
+        <button class="button" id="prev-button">Voltar</button>
+        <button class="button" id="next-button">Próximo</button>
+      </div>
+    </div>
+
+    <script defer>
+      const prevButton = document.getElementById("prev-button");
+      const nextButton = document.getElementById("next-button");
+      const cardImage = document.getElementById("card-image");
+
+      let index = 1;
+
+      prevButton.addEventListener("click", () => {
+        index = index === 1 ? 1 : index - 1;
+
+        cardImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${index}.svg`;
+      });
+
+      nextButton.addEventListener("click", () => {
+        ++index;
+
+        cardImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${index}.svg`;
+      });
+    </script>
+  </body>
+</html>

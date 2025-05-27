@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão #004 e #005</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background: #fafafa;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+      }
+
+      .header {
+        background: #2a1e6bdc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+        padding: 24px;
+      }
+
+      .header h1 {
+        text-align: center;
+      }
+
+      .main {
+        display: flex;
+        width: 100%;
+        flex: 1;
+        padding: 24px 16px;
+      }
+
+      .aside {
+        flex: 30%;
+      }
+
+      .content {
+        flex: 70%;
+      }
+
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .footer {
+        display: flex;
+        background-color: #2a1e6b63;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        font-style: italic;
+      }
+
+      .content h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .content p {
+        margin-bottom: 24px;
+      }
+
+      .content img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        margin-bottom: 12px;
+      }
+
+      .card {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        background: #fafafa;
+        padding: 24px;
+        border-radius: 16px;
+        box-shadow: 1px 1px 10px #0000004b;
+        width: 250px;
+      }
+
+      .card.close {
+        display: none;
+      }
+
+      .card-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 12px;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: -8px;
+        right: 0;
+
+        width: 24px;
+        height: 24px;
+      }
+
+      @media screen and (max-width: 400px) {
+        .main {
+          flex-direction: column;
+          padding-block: 0;
+        }
+
+        .navigation {
+          flex-direction: row;
+          justify-content: space-between;
+          margin-block: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="card">
+      <div class="card-content">
+        <div class="card-header">
+          <button class="close-btn" id="close-btn">X</button>
+        </div>
+        <strong>Novidade!</strong>
+
+        <p>Confira nossos novos produtos.</p>
+      </div>
+    </div>
+    <header class="header">
+      <h1>Desenvolvimento de Software WEB</h1>
+    </header>
+    <main class="main">
+      <aside class="aside">
+        <nav class="navigation">
+          <a rel="stylesheet" href="">Link 1</a>
+          <a rel="stylesheet" href="">Link 2</a>
+          <a rel="stylesheet" href="">Link 3</a>
+          <a rel="stylesheet" href="">Link 4</a>
+        </nav>
+      </aside>
+
+      <div class="content">
+        <div>
+          <h3>Introdução ao HTML</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            possimus ullam hic a, dolores ducimus eius nam recusandae aperiam
+            tenetur in voluptatum repudiandae ad nostrum necessitatibus
+            reprehenderit corporis est optio?
+          </p>
+
+          <img
+            src="https://www.mediapost.com.br/assets/uploads/2011/11/o-que-e-html.jpg"
+            alt="Imagem bem bonita"
+          />
+
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+            repellat repudiandae aliquam adipisci et quis odio, iusto pariatur
+            ex dolor doloremque tempora sequi natus praesentium nam labore alias
+            ut non.
+          </p>
+
+          <img
+            src="https://assets.dio.me/2Mamyl59vPnzYAW263AnOxyFfYNkJWgvRlDxbakTGQM/f:webp/q:80/L2FydGljbGVzL2NvdmVyLzhiYWEwODU1LTRiZDUtNGFiZi1hMDA3LTQ4NTI3YTdjNTg1OS5wbmc"
+            alt="Outra imagem bonita"
+          />
+        </div>
+        <div>
+          <h3>Introdução ao HTML</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            possimus ullam hic a, dolores ducimus eius nam recusandae aperiam
+            tenetur in voluptatum repudiandae ad nostrum necessitatibus
+            reprehenderit corporis est optio?
+          </p>
+
+          <img
+            src="https://www.mediapost.com.br/assets/uploads/2011/11/o-que-e-html.jpg"
+            alt="Imagem bem bonita"
+          />
+
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+            repellat repudiandae aliquam adipisci et quis odio, iusto pariatur
+            ex dolor doloremque tempora sequi natus praesentium nam labore alias
+            ut non.
+          </p>
+
+          <img
+            src="https://assets.dio.me/2Mamyl59vPnzYAW263AnOxyFfYNkJWgvRlDxbakTGQM/f:webp/q:80/L2FydGljbGVzL2NvdmVyLzhiYWEwODU1LTRiZDUtNGFiZi1hMDA3LTQ4NTI3YTdjNTg1OS5wbmc"
+            alt="Outra imagem bonita"
+          />
+        </div>
+        <div>
+          <h3>Introdução ao HTML</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            possimus ullam hic a, dolores ducimus eius nam recusandae aperiam
+            tenetur in voluptatum repudiandae ad nostrum necessitatibus
+            reprehenderit corporis est optio?
+          </p>
+
+          <img
+            src="https://www.mediapost.com.br/assets/uploads/2011/11/o-que-e-html.jpg"
+            alt="Imagem bem bonita"
+          />
+
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+            repellat repudiandae aliquam adipisci et quis odio, iusto pariatur
+            ex dolor doloremque tempora sequi natus praesentium nam labore alias
+            ut non.
+          </p>
+
+          <img
+            src="https://assets.dio.me/2Mamyl59vPnzYAW263AnOxyFfYNkJWgvRlDxbakTGQM/f:webp/q:80/L2FydGljbGVzL2NvdmVyLzhiYWEwODU1LTRiZDUtNGFiZi1hMDA3LTQ4NTI3YTdjNTg1OS5wbmc"
+            alt="Outra imagem bonita"
+          />
+        </div>
+        <div>
+          <h3>Introdução ao HTML</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            possimus ullam hic a, dolores ducimus eius nam recusandae aperiam
+            tenetur in voluptatum repudiandae ad nostrum necessitatibus
+            reprehenderit corporis est optio?
+          </p>
+
+          <img
+            src="https://www.mediapost.com.br/assets/uploads/2011/11/o-que-e-html.jpg"
+            alt="Imagem bem bonita"
+          />
+
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+            repellat repudiandae aliquam adipisci et quis odio, iusto pariatur
+            ex dolor doloremque tempora sequi natus praesentium nam labore alias
+            ut non.
+          </p>
+
+          <img
+            src="https://assets.dio.me/2Mamyl59vPnzYAW263AnOxyFfYNkJWgvRlDxbakTGQM/f:webp/q:80/L2FydGljbGVzL2NvdmVyLzhiYWEwODU1LTRiZDUtNGFiZi1hMDA3LTQ4NTI3YTdjNTg1OS5wbmc"
+            alt="Outra imagem bonita"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <address>
+        <a href="mailto:fulanodetal@ufc.br"> fulanodetal@ufc.br </a>
+      </address>
+      <span>2025.1</span>
+      <span>Todos os direitos reservados</span>
+    </footer>
+
+    <script defer>
+      const card = document.getElementById("card");
+      const closeCardBtn = document.getElementById("close-btn");
+
+      closeCardBtn.addEventListener("click", () => {
+        card.classList.add("close");
+      });
+    </script>
+  </body>
+</html>
